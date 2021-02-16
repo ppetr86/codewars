@@ -1,8 +1,10 @@
-package codewars;
+/*
+package codewars.kyu5;
 
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -13,28 +15,28 @@ public class ToSmallest {
   }
 
   public static long[] smallest(long n) {
-    List<Character> list = String.valueOf(n)
-            .chars()
-            .mapToObj(e -> (char) e)
+
+    List<Long> notSortedList = Arrays.stream(String.valueOf(n).split(""))
+            .map(Long::parseLong)
             .collect(Collectors.toList());
 
-    char smallestDigit;
+    List<Long> sortedList = notSortedList.stream().sorted().collect(Collectors.toList());
+
     long fromIndex = 0;
     long toIndex = 0;
-    for (int i = 0; i < list.size(); i++) {
-      smallestDigit = getSmallestDigit(list, i);
-      int indexOfSmallest = list.indexOf(smallestDigit);
-      char charOnI = list.get(i);
-      if (list.get(i) > smallestDigit) {
+    long smallestNumber = Long.MAX_VALUE;
+    String inputAsString = String.valueOf(n);
+
+    for (int i = 0; i < sortedList.size(); i++) {
+      if ((long) inputAsString.charAt(i) > (sortedList.get(i))){
+        long holder = ;
+        fromIndex = notSortedList.indexOf(sortedList.get(i));
         toIndex = i;
-        fromIndex = indexOfSmallest;
-        list.set(i, smallestDigit);
-        list.set(indexOfSmallest, charOnI);
-        break;
+        smallestNumber
       }
     }
 
-    long number = Long.parseLong(list.stream().map(String::valueOf).collect(Collectors.joining()));
+    long number = Long.parseLong(sortedList.stream().map(String::valueOf).collect(Collectors.joining()));
 
     return new long[]{number, fromIndex, toIndex};
   }
@@ -48,4 +50,4 @@ public class ToSmallest {
             .get();
     return number;
   }
-}
+}*/
