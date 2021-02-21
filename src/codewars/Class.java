@@ -216,47 +216,6 @@ public class Class {
     return total / size;
   }
 
-  private static int[][] closest(String strng) {
-
-    if (strng.isEmpty() || strng.isBlank()) return new int[0][0];
-    List<String> strList = Arrays.stream(strng.split(" ")).collect(Collectors.toList());
-    List<Integer> weights = new ArrayList<>();
-
-    for (int i = 0; i < strList.size(); i++) {
-      char[] charArr = strList.get(i).toCharArray();
-      int toIntList = 0;
-      for (int j = 0; j < charArr.length; j++) {
-        toIntList += Integer.parseInt(String.valueOf(charArr[j]));
-      }
-      weights.add(toIntList);
-    }
-
-    int diff = Integer.MAX_VALUE;
-    int firstIndex = 0, secondIndex = 0;
-
-    for (int i = 0; i < weights.size() - 1; i++) {
-      for (int j = i + 1; j < weights.size(); j++) {
-        if (Math.abs(weights.get(i) - weights.get(j)) < diff) {
-          int diffHolder = Math.abs(weights.get(i) - weights.get(j));
-          if (diffHolder < diff) {
-            firstIndex = i;
-            secondIndex = j;
-            diff = diffHolder;
-          }
-        }
-      }
-    }
-
-    System.out.println(strList);
-    System.out.println(weights);
-    System.out.println(firstIndex);
-    System.out.println(secondIndex);
-    System.out.println(diff);
-
-    return new int[][]{{weights.get(firstIndex), firstIndex, Integer.parseInt(strList.get(firstIndex))},
-            {weights.get(secondIndex), secondIndex, Integer.parseInt(strList.get(secondIndex))}};
-  }
-
   private static int[] nbMonths(int startPriceOld, int startPriceNew, int savingperMonth, double percentLossByMonth) {
     double lossIncrease = 0.5;
     int months = 0;

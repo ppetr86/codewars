@@ -1,53 +1,56 @@
-/*
 package codewars.kyu5;
 
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.stream.Collectors;
 
 public class ToSmallest {
 
   public static void main(String[] args) throws ParseException {
-    System.out.println(Arrays.toString(smallest(285365)));
+    System.out.println(Arrays.toString(smallest(261235)));
   }
 
   public static long[] smallest(long n) {
 
-    List<Long> notSortedList = Arrays.stream(String.valueOf(n).split(""))
-            .map(Long::parseLong)
-            .collect(Collectors.toList());
+    String input = String.valueOf(n);
 
-    List<Long> sortedList = notSortedList.stream().sorted().collect(Collectors.toList());
+    String sorted = Arrays.stream(String.valueOf(n).split(""))
+            .map(Long::parseLong)
+            .sorted()
+            .map(String::valueOf)
+            .collect(Collectors.joining());
 
     long fromIndex = 0;
     long toIndex = 0;
-    long smallestNumber = Long.MAX_VALUE;
-    String inputAsString = String.valueOf(n);
+    long number = n;
 
-    for (int i = 0; i < sortedList.size(); i++) {
-      if ((long) inputAsString.charAt(i) > (sortedList.get(i))){
-        long holder = ;
-        fromIndex = notSortedList.indexOf(sortedList.get(i));
-        toIndex = i;
-        smallestNumber
+    for (int i = 0; i < input.length(); i++) {
+      String dummy = "";
+      if (input.charAt(i) == sorted.charAt(i)) continue;
+      if (input.charAt(i) > sorted.charAt(i)) {
+        int indexOfInput = i;//1 -> corresponds to 8
+        int indexOfSortedAtIinInput = input.indexOf(sorted.charAt(i));//index 1 -> corresponds to 3
+
+        System.out.println("indexOfInput " + indexOfInput);
+        System.out.println("indexOfSortedAtIinInput " + indexOfSortedAtIinInput);
+
+        String[] arr = input.split("");
+        String holder1 = String.valueOf(input.charAt(i));
+        String holder2 = String.valueOf(sorted.charAt(i));
+        System.out.println("holder1 " + holder1);
+        System.out.println("holder2 " + holder2);
+
+        arr[i] = holder2;
+        arr[indexOfSortedAtIinInput] = holder1;
+        dummy = String.join("", arr);
+
+        if (Long.parseLong(dummy) < number) {
+          number = Long.parseLong(dummy);
+          fromIndex = indexOfInput;
+          toIndex = indexOfSortedAtIinInput;
+        }
       }
     }
-
-    long number = Long.parseLong(sortedList.stream().map(String::valueOf).collect(Collectors.joining()));
-
     return new long[]{number, fromIndex, toIndex};
   }
-
-  private static Character getSmallestDigit(List<Character> list, int skipCount) {
-    Character number = list
-            .stream()
-            .skip(skipCount)
-            .sorted()
-            .findFirst()
-            .get();
-    return number;
-  }
-}*/
+}
