@@ -7,7 +7,7 @@ import java.util.Map;
 public class Anagrams {
 
   public static void main(String[] args) {
-    System.out.println(makeAnagram("barak", "darek"));
+    System.out.println(makeAnagram("", ""));
   }
 
   static int makeAnagram(String a, String b) {
@@ -41,6 +41,8 @@ public class Anagrams {
         }
       }
     }
+
+    System.out.println((int) 'b'-97);
 
     System.out.println(anagram.toString());
 
