@@ -11,7 +11,6 @@ public class RansomNote {
   private static final Scanner scanner = new Scanner(System.in);
 
 
-  // Complete the checkMagazine function below.
   static void checkMagazine(String[] magazine, String[] note) {
     if (magazine.length < note.length) System.out.println("No");
     if (magazine.length > 30000 || note.length > 6) System.out.println("No");
@@ -30,6 +29,8 @@ public class RansomNote {
               if (noteMap.containsKey(each)) noteMap.put(each, noteMap.get(each) + 1);
               else noteMap.put(each, 1);
             });
+
+    magazineMap.keySet().retainAll(noteMap.keySet());
 
     int count = 0;
 

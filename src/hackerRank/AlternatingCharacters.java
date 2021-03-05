@@ -1,14 +1,10 @@
 package hackerRank;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 //https://www.hackerrank.com/challenges/alternating-characters/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
 public class AlternatingCharacters {
   // Complete the alternatingCharacters function below.
-
 
   static int alternatingCharacters(String s) {
     int result = 0;

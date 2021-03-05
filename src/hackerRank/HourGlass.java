@@ -42,9 +42,9 @@ public class HourGlass {
 
   static int hourglassSum(int[][] arr) {
     int result = Integer.MIN_VALUE;
-    int sumOfThisRun = 0;
 
     for (int i = 0; i < arr.length - 2; i++) {
+      int sumOfThisRun = 0;
       for (int j = 0; j < arr[i].length - 2; j++) {
 
         int sum1 = Arrays.stream(arr[i]).skip(j).limit(3).sum();
@@ -54,7 +54,6 @@ public class HourGlass {
         sumOfThisRun += sum3 + sum2 + sum1;
 
         if (sumOfThisRun > result) result = sumOfThisRun;
-        sumOfThisRun = 0;
       }
     }
     return result;

@@ -1,7 +1,5 @@
 package hackerRank;
 
-import java.util.Arrays;
-
 public class NewYearChaos {
 
   public static void main(String[] args) {
@@ -10,19 +8,31 @@ public class NewYearChaos {
 
   static void minimumBribes(int[] arr) {
 
-    int skipped = 0;
-    boolean tooChaotic = false;
-    int[] sorted = arr;
-    Arrays.sort(sorted);
+    int counter = 0;
+
     for (int i = 0; i < arr.length; i++) {
-      if (Math.abs(arr[i] - sorted[i]) > 2) {
-        skipped = Math.abs(arr[i] - sorted[i]);
-        tooChaotic = true;
-        break;
-      } else {
-        skipped += Math.abs(arr[i] - sorted[i]);
+      if (arr[i] != i + 1) {
+
+        if ((i - 1) >= 0 && arr[i - 1] == i + 1) {
+          counter++;
+          swap(arr, i, i - 1);
+        } else if ((i - 2) >= 0 && arr[i - 2] == i + 1) {
+          counter += 2;
+          swap(arr, i - 2, i - 1);
+          swap(arr, i - 1, i);
+        } else {
+          System.out.println("Too chaotic");
+          return;
+        }
       }
     }
-    System.out.println(skipped > 2 ? skipped : "Too chaotic");
+
+    System.out.println(counter);
   }
+  private static void swap(int[] arr, int a, int b) {
+    int temp = arr[a];
+    arr[a] = arr[b];
+    arr[b] = temp;
+  }
+
 }
