@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class SherlockString {
   public static void main(String[] args) {
-    System.out.println(isValid("aabbccddeefghi"));
+    System.out.println(isValid("aaaaabc"));
+    /*ibfdgaeadiaefgbhbdghhhbgdfgeiccbiehhfcggchgghadhdhagfbahhddgghbdehidbibaeaagaeeigffcebfbaieggabcfbiiedcabfihchdfabifahcbhagccbdfifhghcadfiadeeaheeddddiecaicbgigccageicehfdhdgafaddhffadigfhhcaedcedecafeacbdacgfgfeeibgaiffdehigebhhehiaahfidibccdcdagifgaihacihadecgifihbebffebdfbchbgigeccahgihbcbcaggebaaafgfedbfgagfediddghdgbgehhhifhgcedechahidcbchebheihaadbbbiaiccededchdagfhccfdefigfibifabeiaccghcegfbcghaefifbachebaacbhbfgfddeceababbacgffbagidebeadfihaefefegbghgddbbgddeehgfbhafbccidebgehifafgbghafacgfdccgifdcbbbidfifhdaibgigebigaedeaaiadegfefbhacgddhchgcbgcaeaieiegiffchbgbebgbehbbfcebciiagacaiechdigbgbghefcahgbhfibhedaeeiffebdiabcifgccdefabccdghehfibfiifdaicfedagahhdcbhbicdgibgcedieihcichadgchgbdcdagaihebbabhibcihicadgadfcihdheefbhffiageddhgahaidfdhhdbgciiaciegchiiebfbcbhaeagccfhbfhaddagnfieihghfbaggiffbbfbecgaiiidccdceadbbdfgigibgcgchafccdchgifdeieicbaididhfcfdedbhaadedfageigfdehgcdaecaebebebfcieaecfagfdieaefdiedbcadchabhebgehiidfcgahcdhcdhgchhiiheffiifeegcfdgbdeffhgeghdfhbfbifgidcafbfcd*/
+    /*abcdefghhgfedecba*/
   }
 
   static String isValid(String s) {
@@ -20,27 +22,17 @@ public class SherlockString {
     int minCount = (int) Arrays.stream(letters).filter(each -> each == min).count();
 
     System.out.println(Arrays.toString(letters));
+    int[] arr2 = Arrays.stream(letters).filter(x -> x > 0).sorted().toArray();
+    int[] arr3 = Arrays.stream(letters).filter(x -> x > 0).distinct().sorted().toArray();
+    System.out.println(Arrays.toString(arr2));
+    System.out.println(max + " max");
+    System.out.println(min + " min");
+    System.out.println(maxCount + " maxcount");
+    System.out.println(minCount + " mincount");
 
-    if (max == min) {
-      return "YES";
-    } else if (max - min > 1) {
-      return "NO";
-    } else if (maxCount == 1 || minCount == 1) {
-      return "YES";
-    }
+    if (max == min) return "YES";
+    if ((maxCount == 1 || minCount == 1) && arr3.length == 2) return "YES";
     return "NO";
+
   }
 }
-
-/*
-if (max == min) {
-        return "YES";
-        } else {
-        if (max - min > 1) {
-        return "NO";
-        } else if (maxCount == 1 || minCount == 1) {
-        return "YES";
-        }
-        }
-        return "NO";
-        }*/
