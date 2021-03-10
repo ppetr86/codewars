@@ -15,9 +15,18 @@ public class MaxSubArrSum {
     for (int i = 0; i < arr.length-1; i++) {
       for (int j = i+1; j < arr.length; j++) {
         int holder = Arrays.stream(Arrays.copyOfRange(arr,i,j+1)).sum();
-        if (holder > maxSoFar) maxSoFar = holder;
+        maxSoFar = Math.max(holder,maxSoFar);
       }
     }
     return maxSoFar;
   }
+  /*public static int sequence(int[] arr) {
+    int max_ending_here = 0, max_so_far = 0;
+    for (int v : arr) {
+      max_ending_here = Math.max(0, max_ending_here + v);
+      max_so_far = Math.max(max_so_far, max_ending_here);
+    }
+    return max_so_far;
+  }*/
+
 }
