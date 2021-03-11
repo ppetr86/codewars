@@ -6,28 +6,39 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class StringsMixDuplicate {
+public class StringsMixDuplicateV2 {
   public static void main(String[] args) {
-    System.out.println(mix("Are they here", "yes, they are here"));
+    System.out.println(mix(" In many languages", " there's a pair of functions"));
   }
 
   public static String mix(String s1, String s2) {
+    if (s1.equals(s2)) return "";
     Map<String, Long> mapS1 = getMapFromStirngAndKeepValuesBiggerThan1(s1);
     Map<String, Long> mapS2 = getMapFromStirngAndKeepValuesBiggerThan1(s2);
 
-    Set<Long> values = new HashSet<>(mapS1.values());
-    values.addAll(mapS2.values());
-    List<Long> valuesList = values.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
+    List<KeyAndMapNr> list = createMyObjMap(mapS1, mapS2);
 
-    HashMap<KeyAndMapNr, Long> myObjMap = createMyObjMap(mapS1, mapS2);
-    StringBuilder result = new StringBuilder();
-
-    for (int i = 0; i < valuesList.size(); i++) {
-      long value = valuesList.get(i);
-      result.append(getStringByValue(value, myObjMap));
-    }
-    return result.toString();
+    //compareAndOrder(list);
+    list.sort(Comparator.comparing(KeyAndMapNr::getLettersCount).reversed().thenComparing(KeyAndMapNr::getMapNr));
+    String result = list.stream().map(x -> x.mapNr + x.character + "/").collect(Collectors.joining());
+    return result.substring(0,result.length()-1);
   }
+
+  /*private static void compareAndOrder(List<KeyAndMapNr> list) {
+    list.sort((w1, w2) -> {
+      if (w1.lettersCount == w2.lettersCount) {
+        return w2.getCharacter().substring(0,1).compareTo(w1.character.substring(0,1));
+      } else if (w1.lettersCount != w2.lettersCount) {
+        return (int) (w2.lettersCount - w1.lettersCount);
+      }
+
+      else if (!String.valueOf(w1.order).equals(String.valueOf(w2.order))) {
+        return String.valueOf(w2.order).compareTo(String.valueOf(w1.order));
+      } else {
+        return w2.getCharacter().substring(0,1).compareTo(w1.character.substring(0,1));
+      }
+    });
+  }*/
 
   private static Map<String, Long> getMapFromStirngAndKeepValuesBiggerThan1(String s1) {
     Map<String, Long> mapS1 = Arrays.stream(s1.replaceAll("[^a-zA-Z]", "").split(""))
@@ -39,11 +50,11 @@ public class StringsMixDuplicate {
   }
 
   // I have a hashmap with comparison which letter has bigger frequency and where its original position was
-  private static HashMap<KeyAndMapNr, Long> createMyObjMap(Map<String, Long> mapS1, Map<String, Long> mapS2) {
+  private static List<KeyAndMapNr> createMyObjMap(Map<String, Long> mapS1, Map<String, Long> mapS2) {
 
     Set<String> mergedKeys = new HashSet<>(mapS1.keySet());
     mergedKeys.addAll(mapS2.keySet());
-    HashMap<KeyAndMapNr, Long> result = new HashMap<>();
+    List<KeyAndMapNr> result = new ArrayList<>();
 
     for (String each : mergedKeys) {
       Long map1Val = mapS1.get(each);
@@ -52,55 +63,49 @@ public class StringsMixDuplicate {
       if (map2Val == null) map2Val = 0L;
       if (map1Val.equals(map2Val)) {
         String repeated = IntStream.range(0, Math.toIntExact(map1Val)).mapToObj(x -> each).collect(Collectors.joining());
-        result.put(new KeyAndMapNr(repeated, "=:"), map1Val);
+        result.add(new KeyAndMapNr(repeated, "=:", 3, map1Val));
       }
       if (map1Val > map2Val) {
         String repeated = IntStream.range(0, Math.toIntExact(map1Val)).mapToObj(x -> each).collect(Collectors.joining());
-        result.put(new KeyAndMapNr(repeated, "1:"), map1Val);
+        result.add(new KeyAndMapNr(repeated, "1:", 2, map1Val));
       }
       if (map1Val < map2Val) {
         String repeated = IntStream.range(0, Math.toIntExact(map2Val)).mapToObj(x -> each).collect(Collectors.joining());
-        result.put(new KeyAndMapNr(repeated, "2:"), map2Val);
+        result.add(new KeyAndMapNr(repeated, "2:", 1, map2Val));
       }
     }
     return result;
   }
 
-  private static String getStringByValue(Long value, HashMap<KeyAndMapNr, Long> map1) {
-    StringBuilder result = new StringBuilder();
-    // THE PROBLEM IS HERE. IF EQUAL, MAP 2 SHOULD GO FIRST
-    for (Map.Entry entry : map1.entrySet()) {
-      if (entry.getValue().equals(value)) {
-        
-        KeyAndMapNr key = (KeyAndMapNr) entry.getKey();
-        String fromChar = key.getCharacter();
-        String mapNr = key.mapNr;
-        result.append(mapNr).append(fromChar).append("/");
-      }
-    }
-    return result.toString();
-  }
-
-  private static boolean map2GoesFirst(HashMap<KeyAndMapNr, Long> map1, Long value) {
-    for (Map.Entry entry : map1.entrySet()) {
-      KeyAndMapNr key = (KeyAndMapNr) entry.getKey();
-      if (key.getCharacter().startsWith("2")) return true;
-    }
-    return false;
-  }
-
-
   static class KeyAndMapNr {
+    // to have for example "eeee" - has to start with ":"
     public String character;
+    // to have for example "2" "1" "="
     public String mapNr;
+    public int order;
+    public long lettersCount;
 
-    public KeyAndMapNr(String character, String mapNr) {
+    public KeyAndMapNr(String character, String mapNr, int order, long lettersCount) {
       this.character = character;
       this.mapNr = mapNr;
+      this.order = order;
+      this.lettersCount = lettersCount;
     }
 
     public String getCharacter() {
       return character;
+    }
+
+    public String getMapNr() {
+      return mapNr;
+    }
+
+    public int getOrder() {
+      return order;
+    }
+
+    public long getLettersCount() {
+      return lettersCount;
     }
 
     @Override
@@ -108,4 +113,5 @@ public class StringsMixDuplicate {
       return mapNr + character;
     }
   }
+
 }
