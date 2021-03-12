@@ -1,6 +1,6 @@
 package codewars.kyu4;
 //https://www.codewars.com/kata/5629db57620258aa9d000014/train/java
-
+//https://www.codewars.com/kata/5629db57620258aa9d000014/solutions/java
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -18,9 +18,11 @@ public class StringsMixDuplicateV3 {
 
     List<KeyAndMapNr> list = createMyObjMap(mapS1, mapS2);
 
-    list.sort(Comparator.comparing(KeyAndMapNr::getLettersCount).reversed().thenComparing(KeyAndMapNr::getMapNr).thenComparing(Comparator.comparing(e -> e.character.substring(0, 1))));
+    list.sort(Comparator.comparing(KeyAndMapNr::getLettersCount).reversed()
+            .thenComparing(x -> x.getMapNr() + x.getCharacter()));
+
     String result = list.stream().map(x -> x.mapNr + x.character + "/").collect(Collectors.joining());
-    return result.substring(0,result.length()-1);
+    return result.substring(0, result.length() - 1);
   }
 
   private static Map<String, Long> getMapFromStirngAndKeepValuesBiggerThan1(String s1) {
@@ -61,9 +63,9 @@ public class StringsMixDuplicateV3 {
   }
 
   static class KeyAndMapNr {
-    // to have for example "eeee" - has to start with ":"
+    // to have for example "eeee"
     public String character;
-    // to have for example "2" "1" "="
+    // to have for example "2:" "1:" "=:"
     public String mapNr;
     public int order;
     public long lettersCount;
@@ -83,10 +85,6 @@ public class StringsMixDuplicateV3 {
       return mapNr;
     }
 
-    public int getOrder() {
-      return order;
-    }
-
     public long getLettersCount() {
       return lettersCount;
     }
@@ -97,4 +95,32 @@ public class StringsMixDuplicateV3 {
     }
   }
 
+  /*public static String mix(String s1, String s2) {
+
+    List<String> finalStr = new ArrayList();
+
+    for (char c = 'a'; c <= 'z'; c++) {
+      String s1_char = s1.replaceAll("[^"+c+"]+","");
+      String s2_char = s2.replaceAll("[^"+c+"]+","");
+
+      int s1_length = s1_char.length();
+      int s2_length = s2_char.length();
+
+      if(s1_length>1 || s2_length>1){
+        if(s1_length == s2_length){
+          finalStr.add("=:"+s1_char);
+        }
+        if(s1_length>s2_length){
+          finalStr.add("1:"+s1_char);
+        }
+        if(s1_length<s2_length){
+          finalStr.add("2:"+s2_char);
+        }
+      }
+    }
+    Comparator<String> length = (x,y) -> y.length()-x.length();
+    Comparator<String> type_value = (x,y) -> Character.compare(x.charAt(0),y.charAt(0));
+
+    return finalStr.stream().sorted(length.thenComparing(type_value)).collect(Collectors.joining("/"));
+  }*/
 }
