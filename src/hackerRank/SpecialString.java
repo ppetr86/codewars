@@ -12,19 +12,10 @@ public class SpecialString {
 
   static long substrCount(int n, String s) {
     long result = n;
+    int counter = 1;
 
-    for (int i = 0; i < s.length() - 2; i++) {
-      // traverse substrings starting with length 2
-      for (int j = i + 2; j < s.length() - 1; j++) {
-        String str = s.substring(i, j);
-        StringBuilder reversed = new StringBuilder(str).reverse();
-        if (str.equals(reversed.toString())) result++;
-        if (str.length() > 3 && str.length() % 2 != 0) {
-          String str2 = str.substring(0, str.length() / 2 + 1) + str.substring(str.length() / 2 + 2);
-          StringBuilder reversed2 = new StringBuilder(str).reverse();
-          if (str2.equals(reversed2.toString())) result++;
-        }
-      }
+    for (int i = 0; i < s.length(); i++) {
+      String subString = s.substring(i,i+counter);
     }
     return result;
   }

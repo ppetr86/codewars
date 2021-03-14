@@ -1,11 +1,13 @@
 package hackerRank;
 
-import java.util.*;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Stack;
 
 public class LargestRectangle {
 
   public static void main(String[] args) {
-    System.out.println(largestRectangle(new int[]{5,2,4,3,6,8,6}));
+    System.out.println(largestRectangle(new int[]{5, 2, 4, 3, 6, 8, 6}));
   }
 
   static long largestRectangle(int[] h) {
@@ -24,9 +26,10 @@ public class LargestRectangle {
     largest.add((long) h[2]);
     largest.add((long) h[3]);
     largest.add((long) h[4]);
+    System.out.println("priority queeue");
     System.out.println(largest);
     //Retrieves and removes the head of this queue, or returns null if this queue is empty.
-    largest.poll();
+    System.out.println("poll " + largest.poll());
     System.out.println(largest);
     //Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
     System.out.println(largest.peek());
@@ -38,10 +41,11 @@ public class LargestRectangle {
     stack.push((long) h[3]);
     stack.push((long) h[4]);
     System.out.println("---------------");
+    System.out.println("stack");
     System.out.println(stack);
-    System.out.println(stack.pop());
+    System.out.println("pop" + stack.pop());
     System.out.println(stack);
-    System.out.println(stack.peek());
+    System.out.println("peek" + stack.peek());
 
     Queue<Long> queue = new PriorityQueue<>();
     queue.add((long) h[0]);
@@ -50,12 +54,12 @@ public class LargestRectangle {
     queue.add((long) h[3]);
     queue.add((long) h[4]);
     System.out.println("---------------");
+    System.out.println("queue");
     System.out.println(queue);
     System.out.println(queue.poll());
     System.out.println(queue);
     System.out.println(queue.peek());
     System.out.println(queue);
-
 
 
     return 0L;
