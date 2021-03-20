@@ -1,5 +1,6 @@
 package hackerRank;
-
+//https://www.hackerrank.com/challenges/min-max-riddle/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=stacks-queues
+//is not passing all tests based on speed
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
