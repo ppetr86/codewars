@@ -1,67 +1,34 @@
 package hackerRank;
 
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.Arrays;
+import java.util.Deque;
 
 public class LargestRectangle {
 
   public static void main(String[] args) {
-    System.out.println(largestRectangle(new int[]{5, 2, 4, 3, 6, 8, 6}));
+    System.out.println(largestRectangle(new int[]{1,2,3,4,5}));
   }
 
   static long largestRectangle(int[] h) {
-    /*Queue<Long> myQue = new PriorityQueue<>();
-    long result = (long) Arrays.stream(h).min().getAsInt() *h.length;
-    for (int i = 1; i < h.length; i++) {
-      long sumInmyQue = myQue.stream().reduce(0L,Long::sum);
-      long minInmyQue = Collections.min(myQue);
-      long size = myQue.size();
-      Queue<Long> holderQue = myQue;
-      holderQue.poll();
-    }*/
-    PriorityQueue<Long> largest = new PriorityQueue<>();
-    largest.add((long) h[0]);
-    largest.add((long) h[1]);
-    largest.add((long) h[2]);
-    largest.add((long) h[3]);
-    largest.add((long) h[4]);
-    System.out.println("priority queeue");
-    System.out.println(largest);
-    //Retrieves and removes the head of this queue, or returns null if this queue is empty.
-    System.out.println("poll " + largest.poll());
-    System.out.println(largest);
-    //Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
-    System.out.println(largest.peek());
 
-    Stack<Long> stack = new Stack<>();
-    stack.push((long) h[0]);
-    stack.push((long) h[1]);
-    stack.push((long) h[2]);
-    stack.push((long) h[3]);
-    stack.push((long) h[4]);
-    System.out.println("---------------");
-    System.out.println("stack");
-    System.out.println(stack);
-    System.out.println("pop" + stack.pop());
-    System.out.println(stack);
-    System.out.println("peek" + stack.peek());
+    long result = 0L;
+    for (int i = 0; i < h.length - 1; i++) {
+      for (int j = i; j < h.length; j++) {
+        result = Math.max(result, areaOfArr(Arrays.copyOfRange(h, i, j + 1)));
+      }
+    }
+    return result;
+  }
 
-    Queue<Long> queue = new PriorityQueue<>();
-    queue.add((long) h[0]);
-    queue.add((long) h[1]);
-    queue.add((long) h[2]);
-    queue.add((long) h[3]);
-    queue.add((long) h[4]);
-    System.out.println("---------------");
-    System.out.println("queue");
-    System.out.println(queue);
-    System.out.println(queue.poll());
-    System.out.println(queue);
-    System.out.println(queue.peek());
-    System.out.println(queue);
+  private static long areaOfArr(int[] h) {
+    return (long) Arrays.stream(h).min().orElse(0) * h.length;
+  }
 
+  private static long qmin(Deque<Integer> deque) {
+    return (long) deque.stream().min(Integer::compare).get();
+  }
 
-    return 0L;
+  private static long area(Deque<Integer> deque) {
+    return (long) deque.stream().min(Integer::compare).get() * deque.size();
   }
 }

@@ -22,7 +22,6 @@ public class TwoStrings {
     Set<String> second = new HashSet<>(Arrays.asList(str2.split("")));
 
     first.retainAll(second);
-    if (first.size() > 0) return "YES";
-    return "NO";
+    return first.size() > 0 ? "YES" : "NO";
   }
 }

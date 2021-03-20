@@ -7,12 +7,13 @@ import java.util.Map;
 public class Anagrams {
 
   public static void main(String[] args) {
-    System.out.println(makeAnagram("", ""));
+    System.out.println(makeAnagram("fcrxzwscanmligyxyvym", "jxwtrhvujlmrpdoqbisbwhmgpmeoke"));
   }
 
   static int makeAnagram(String a, String b) {
 
-    if (a.chars().sorted().toString().equals(b.chars().sorted().toString())) return 0;
+    // the line below is not good for efficiency
+    //if (a.chars().sorted().toString().equals(b.chars().sorted().toString())) return 0;
 
     HashMap<String, Integer> aMap = new HashMap<>();
     HashMap<String, Integer> bMap = new HashMap<>();
@@ -31,21 +32,17 @@ public class Anagrams {
 
     StringBuilder anagram = new StringBuilder();
 
-
     for (Map.Entry<String, Integer> eachPair : aMap.entrySet()) {
       if (bMap.containsKey(eachPair.getKey())) {
+
         int keyCountA = eachPair.getValue();
         int keyCountB = bMap.get(eachPair.getKey());
+
         for (int i = 0; i < Math.min(keyCountA, keyCountB); i++) {
           anagram.append(eachPair.getKey());
         }
       }
     }
-
-    System.out.println((int) 'b'-97);
-
-    System.out.println(anagram.toString());
-
 
     return a.length() + b.length() - (2 * anagram.length());
   }

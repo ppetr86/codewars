@@ -29,6 +29,7 @@ public class BalancedBrackets {
   }*/
 
   static String isBalanced(String s) {
+    //Double end queue support removal and insertion at both ends
     Deque<Character> deque = new LinkedList<>();
     for (char ch: s.toCharArray()) {
       if (ch == '{' || ch == '[' || ch == '(') {

@@ -1,0 +1,37 @@
+package hackerRank;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class MinMaxRiddle {
+
+  public static void main(String[] args) {
+    System.out.println(Arrays.toString(riddle(new long[]{3, 5, 4, 7, 6, 2})));
+  }
+
+  static long[] riddle(long[] arr) {
+    long[] result = new long[arr.length];
+    int length = 1;
+
+    while (length <= arr.length) {
+      Queue<Long> myQ = new LinkedList<>();
+      long myQmin = 0;
+      for (int i = 0; i < arr.length; i++) {
+
+        if (myQ.size() < length) {
+          myQ.add(arr[i]);
+        }
+
+        if (myQ.size() == length) {
+          long holderMin = myQ.stream().min(Long::compare).get();
+          myQmin = Math.max(holderMin, myQmin);
+          myQ.poll();
+          result[length - 1] = myQmin;
+        }
+      }
+      length++;
+    }
+    return result;
+  }
+}

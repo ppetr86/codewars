@@ -11,6 +11,7 @@ public class LeftRotation {
     for (int i = 0; i < arr.length; i++) {
       result[i] = arr[(i+d)%arr.length];
     }
+
     return result;
   }
   // 3,4,5,1,2
