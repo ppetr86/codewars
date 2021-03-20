@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SherlockAnagram {
+public class SherlockAnagramV2 {
   public static void main(String[] args) {
     System.out.println(sherlockAndAnagrams("abba"));
   }
