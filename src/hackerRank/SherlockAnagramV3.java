@@ -3,10 +3,8 @@ package hackerRank;
 //timeout on this approach
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
-public class SherlockAnagram {
+public class SherlockAnagramV3 {
   public static void main(String[] args) {
     System.out.println(sherlockAndAnagrams("abba"));
   }
@@ -15,13 +13,17 @@ public class SherlockAnagram {
     int result = 0;
 
     for (int strLen = 1; strLen <= str.length() / 2 + 1; strLen++) {
-
       for (int i = 0; i < str.length() - strLen; i++) {
-        List<String> leftList = Arrays.asList(str.substring(i, i + strLen).split("")).stream().sorted().collect(Collectors.toList());
-
+        String leftStr = str.substring(i, i + strLen);
         for (int j = i + 1; j < str.length() - strLen + 1; j++) {
-          List<String> rightList = Arrays.asList(str.substring(j, j + strLen).split("")).stream().sorted().collect(Collectors.toList());
-          if (leftList.equals(rightList)) result++;
+          String rightStr = str.substring(j, j + strLen);
+          if (leftStr.contains(rightStr.substring(0,1))) {
+            char[] leftList = str.substring(i, i + strLen).toCharArray();
+            Arrays.sort(leftList);
+            char[] rightList = str.substring(j, j + strLen).toCharArray();
+            Arrays.sort(rightList);
+            if (Arrays.equals(rightList, leftList)) result++;
+          }
         }
       }
     }

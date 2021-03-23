@@ -4,9 +4,8 @@ package hackerRank;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Stack;
 
-public class MinMaxRiddle {
+public class MinMaxRiddleV2 {
 
   public static void main(String[] args) {
     System.out.println(Arrays.toString(riddle(new long[]{3, 5, 4, 7, 6, 2})));
@@ -21,10 +20,12 @@ public class MinMaxRiddle {
       long myQmin = 0;
 
       for (int i = 0; i < arr.length; i++) {
-        if (myQ.size() < length) {
+        if (myQ.size() < length-1) {
           myQ.add(arr[i]);
+          continue;
         }
-        if (myQ.size() == length) {
+        if (myQ.size() == length-1) {
+          myQ.add(arr[i]);
           long holderMin = myQ.stream().min(Long::compare).get();
           myQmin = Math.max(holderMin, myQmin);
           myQ.poll();

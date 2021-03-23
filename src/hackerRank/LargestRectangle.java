@@ -1,7 +1,7 @@
 package hackerRank;
 
-import java.util.Arrays;
-import java.util.Deque;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class LargestRectangle {
 
@@ -10,7 +10,6 @@ public class LargestRectangle {
   }
 
   static long largestRectangle(int[] h) {
-
     long result = 0L;
     for (int i = 0; i < h.length - 1; i++) {
       for (int j = i; j < h.length; j++) {
@@ -24,11 +23,4 @@ public class LargestRectangle {
     return (long) Arrays.stream(h).min().orElse(0) * h.length;
   }
 
-  private static long qmin(Deque<Integer> deque) {
-    return (long) deque.stream().min(Integer::compare).get();
-  }
-
-  private static long area(Deque<Integer> deque) {
-    return (long) deque.stream().min(Integer::compare).get() * deque.size();
-  }
 }

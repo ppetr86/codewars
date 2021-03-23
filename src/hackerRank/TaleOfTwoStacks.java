@@ -1,13 +1,36 @@
+/*
 package hackerRank;
+
+import java.util.Scanner;
+import java.util.Vector;
 
 public class TaleOfTwoStacks {
 
   public static void main(String[] args) {
-    //Stack is Lifo
-    //Queue  is Fifo
-    //Dequeue knows both
+    MyQueue<Integer> queue = new MyQueue<Integer>();
+    Scanner scan = new Scanner(System.in);
+    int n = scan.nextInt();
 
-    //In this challenge, you must first implement a queue using two stacks.
-    // Then process  queries, where each query is one of the following  types:
+    for (int i = 0; i < n; i++) {
+      int operation = scan.nextInt();
+      if (operation == 1) { // enqueue
+        queue.enqueue(scan.nextInt());
+      } else if (operation == 2) { // dequeue
+        queue.dequeue();
+      } else if (operation == 3) { // print/peek
+        System.out.println(queue.peek());
+      }
+    }
+    scan.close();
+  }
+
+  //In this challenge, you must first implement a queue using two stacks.
+  // Then process  queries, where each query is one of the following  types:
+  static class MyQueue<E> extends Vector {
+
+    public Integer enque() {
+
+    }
   }
 }
+*/
