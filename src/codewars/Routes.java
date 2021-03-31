@@ -2,14 +2,11 @@ package codewars;
 //https://www.codewars.com/kata/5899a4b1a6648906fe000113/train/java
 //https://www.codewars.com/kata/5899a4b1a6648906fe000113/solutions/java
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Stream;
+import java.util.*;
+import java.util.function.Function;
 
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toMap;
+import static java.util.stream.Collectors.counting;
+import static java.util.stream.Collectors.groupingBy;
 
 public class Routes {
 
@@ -17,7 +14,7 @@ public class Routes {
     System.out.println(findRoutes(new String[][]{{"MNL", "TAG"}, {"CEB", "TAC"}, {"TAG", "CEB"}, {"TAC", "BOR"}}));
   }
 
-  public static String findRoutes(String[][] routes) {
+  /*public static String findRoutes(String[][] routes) {
     // create map where key is finishing locaiton, value is starting location
     Map<String, String> map = Arrays.stream(routes).collect(toMap(e -> e[1], e -> e[0]));
     // get the one which in map doesnt contain the finish location
@@ -25,7 +22,7 @@ public class Routes {
     List<String> s = Stream.iterate(last[1], e -> map.get(e)).limit(routes.length + 1)
             .collect(LinkedList::new, (a, b) -> a.addFirst(b), (a, b) -> {});
     return s.stream().collect(joining(", "));
-  }
+  }*/
 
   /*public static String findRoutes(String[][] routes) {
     String str = "";
@@ -52,7 +49,7 @@ public class Routes {
     return routeStr;
   }*/
 
-  /*public static String findRoutes(String[][] routes) {
+  public static String findRoutes(String[][] routes) {
     Map<String, Long> locationCount = Arrays.stream(routes).flatMap(Arrays::stream).collect(groupingBy(Function.identity(), counting()));
     StringBuilder start = new StringBuilder();
     StringBuilder end = new StringBuilder();
@@ -62,7 +59,6 @@ public class Routes {
     List<List<String>> result = new ArrayList<>();
     StringBuilder sb = new StringBuilder();
     addFirstPairToResult(result, routes, start,sb);
-
 
     while (result.size() < routes.length) {
       for (int i = 0; i < routes.length; i++) {
@@ -87,7 +83,6 @@ public class Routes {
     }
   }
 
-
   private static void findLocation(String[][] routes, int i, Map<String, Long> locationCount, StringBuilder start, StringBuilder end) {
     List<String> oneTimeUsedLocations = new ArrayList<>();
 
@@ -107,5 +102,5 @@ public class Routes {
       start.append(oneTimeUsedLocations.get(1));
       end.append(oneTimeUsedLocations.get(0));
     }
-  }*/
+  }
 }

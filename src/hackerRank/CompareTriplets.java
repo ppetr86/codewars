@@ -1,6 +1,5 @@
 package hackerRank;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +10,7 @@ public class CompareTriplets {
     List<Integer> bob = Arrays.asList(3, 6, 10);
     System.out.println(compareTriplets(alice, bob));
   }
-
+  // compare index i from both lists and count scores
   static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
     int aScore = 0;
     int bScore = 0;

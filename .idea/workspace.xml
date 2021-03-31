@@ -20,113 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codewars/Routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codewars.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codewars.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/Delete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/AlphabetWarAirstrike.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/AreSame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/CalculateRotation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/Class$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/Class$Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/Class.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/DifferenceOfTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/DivisibleCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/Indice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/MostFrequentDays.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/PrizeDraw$WeightsAndNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/PrizeDraw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/PrizeDrawEditable$WeightsAndNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/PrizeDrawEditable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/RemoveParentheses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/SortTheOdd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/Stat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/State$Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/SurrealCheck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/Tortoise.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/UpsideDown.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu4/StringIterationString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu4/StringsMixDuplicateV3$KeyAndMapNr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu4/StringsMixDuplicateV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/Bundesliga$Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/Bundesliga.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/ComputeRanks$TeamStats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/ComputeRanks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/ComputeRanksDuplicate$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/ComputeRanksDuplicate$TeamStats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/ComputeRanksDuplicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/DingleMouse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/DirReduction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/HowManyNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/MaxSubArrSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/MaxSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/ResistorsColorCodes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/RoadKill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/Scramblies.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/SecondVariationCaesar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/ToSmallest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/ValidParentheses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/Weights$Weight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/Weights.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/AlternatingCharacters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Anagrams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/ArrayManipulation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/BalancedBrackets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/BubbleSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Checker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Climber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Clouds.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/CommonChild$EachLetter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/CommonChild.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/ComparePlayers$Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/ComparePlayers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/CompareTriplets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/CountTriplets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/DiagonalDifference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Fraudulent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/GreedyFlorist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/HourGlass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/IceCream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/LargestRectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/LargestRectangleV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/LeftRotation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/LuckBalance$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/LuckBalance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MaxArraySum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MaxMin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MaxSubArraySum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MinMaxRiddle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MinMaxRiddleV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MinimumAbsDiff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MinimumSwaps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MinimumTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/NewYearChaos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Pairs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/RansomNote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SalesByMatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SherlockAnagram.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/NbaRanking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/codewars/Routes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/CompareTriplets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/hackerRank/CompareTriplets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SherlockAnagramV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SherlockAnagramV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SherlockString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SherlockValid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SpecialString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SpecialStringV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SpecialStringV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Strings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SubarrayDivision.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Toys.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Triplets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/TwoStrings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/SubarrayDivision.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/hackerRank/SubarrayDivision.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codewars/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codewars/Routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/CompareTriplets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/CompareTriplets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/MinimumSwaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/MinimumSwaps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/SherlockAnagramV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/SherlockAnagramV4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/SubarrayDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/SubarrayDivision.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,22 +79,14 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Routes">
-    <configuration name="BeautifulBinaryString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.BeautifulBinaryString" />
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hackerRank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Routes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.Routes" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hackerRank" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MinimumSwaps">
+    <configuration name="Bonuses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.Bonuses" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
@@ -202,18 +98,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="delete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="delete" />
+    <configuration name="MinimumSwaps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackerRank.MinimumSwaps" />
       <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hackerRank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NbaRanking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.NbaRanking" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codewars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SherlockAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackerRank.SherlockAnagram" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hackerRank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SherlockAnagramV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackerRank.SherlockAnagramV3" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hackerRank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Routes" />
-        <item itemvalue="Application.BeautifulBinaryString" />
-        <item itemvalue="Application.delete" />
+        <item itemvalue="Application.MinimumSwaps" />
+        <item itemvalue="Application.SherlockAnagram" />
+        <item itemvalue="Application.SherlockAnagramV3" />
+        <item itemvalue="Application.NbaRanking" />
+        <item itemvalue="Application.Bonuses" />
       </list>
     </recent_temporary>
   </component>
@@ -253,5 +196,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/codewars/NbaRanking.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
