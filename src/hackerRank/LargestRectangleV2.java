@@ -3,25 +3,27 @@ package hackerRank;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
-import java.util.LinkedList;
+import java.util.stream.Collectors;
 
 public class LargestRectangleV2 {
 
   public static void main(String[] args) {
-    System.out.println(largestRectangle(new int[]{1,2,3,4,5}));
+    System.out.println(largestRectangle(new int[]{1, 2, 3, 4, 5}));
   }
 
   static long largestRectangle(int[] h) {
 
-    ArrayDeque<Integer> deque = new ArrayDeque<>();
-    long result = areaOfArr(deque);
+    ArrayDeque<Integer> qCurrent = Arrays.stream(h).boxed().collect(Collectors.toCollection(ArrayDeque::new));
+    ArrayDeque<Integer> qLargest = Arrays.stream(h).boxed().collect(Collectors.toCollection(ArrayDeque::new));
+    long largest = areaOfArr(qCurrent);
 
+    int removedFromLeft = 0;
+    int removedFromRight = 0;
 
+    for (int i = removedFromLeft; i < h.length - removedFromRight; i++) {
 
-    for (int i = 0; i < deque.size(); i++) {
-      //long holderResult = areaOfArr(deque.)
     }
-    return result;
+    return largest;
   }
 
   private static long areaOfArr(ArrayDeque<Integer> deque) {

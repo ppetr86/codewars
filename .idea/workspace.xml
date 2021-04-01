@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/hackerRank/MinimumSwaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/MinimumSwaps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/CountTriplets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/hackerRank/CountTriplets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/LargestRectangleV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/hackerRank/LargestRectangleV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MaxArraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/hackerRank/MaxArraySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/CountTriplets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/CountTriplets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/LargestRectangleV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/LargestRectangleV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/MaxArraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/MaxArraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/TaleOfTwoStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/TaleOfTwoStacks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +81,39 @@
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MinimumSwaps">
-    <configuration name="Bonuses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.Bonuses" />
+  <component name="RunManager" selected="Application.CountTriplets">
+    <configuration name="CountTriplets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackerRank.CountTriplets" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codewars.*" />
+          <option name="PATTERN" value="hackerRank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestRectangleV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackerRank.LargestRectangleV2" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hackerRank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxArraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackerRank.MaxArraySum" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hackerRank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,19 +134,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NbaRanking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.NbaRanking" />
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codewars.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SherlockAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hackerRank.SherlockAnagram" />
       <module name="codewars" />
@@ -127,26 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SherlockAnagramV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.SherlockAnagramV3" />
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hackerRank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountTriplets" />
+        <item itemvalue="Application.LargestRectangleV2" />
+        <item itemvalue="Application.MaxArraySum" />
         <item itemvalue="Application.MinimumSwaps" />
         <item itemvalue="Application.SherlockAnagram" />
-        <item itemvalue="Application.SherlockAnagramV3" />
-        <item itemvalue="Application.NbaRanking" />
-        <item itemvalue="Application.Bonuses" />
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +201,16 @@
           <url>file://$PROJECT_DIR$/src/codewars/NbaRanking.java</url>
           <line>38</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/hackerRank/MaxArraySum.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/hackerRank/CountTriplets.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
