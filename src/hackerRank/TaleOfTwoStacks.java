@@ -1,9 +1,6 @@
 package hackerRank;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Vector;
+import java.util.*;
 
 public class TaleOfTwoStacks {
 
@@ -28,20 +25,20 @@ public class TaleOfTwoStacks {
   //In this challenge, you must first implement a queue using two stacks.
   // Then process  queries, where each query is one of the following  types:
   static class MyQueue<E> extends Vector {
+    //E for generic object type - it is better to use E rather than Object
+    List<E> myList = new ArrayList<>();
 
-    List<Integer> myList = new ArrayList<>();
-
-    public void enqueue(int input) {
+    public void enqueue(E input) {
       myList.add(input);
     }
 
-    public Integer dequeue() {
-      int last = myList.get(0);
+    public E dequeue() {
+      E last = myList.get(0);
       myList.remove(0);
       return last;
     }
 
-    public Integer peek() {
+    public E peek() {
       return myList.get(0);
     }
   }

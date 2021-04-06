@@ -36,9 +36,7 @@ public class DiagonalDifference {
     for (int i = 0; i < arr.size(); i++) {
       diag2 += arr.get(i).get(i);
       diag1 += arr.get(arr.size() - i - 1).get(i);
-
     }
-
     return Math.abs(diag1 - diag2);
   }
 }

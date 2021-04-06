@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class SherlockAnagramV4 {
   public static void main(String[] args) {
-    System.out.println(sherlockAndAnagrams("abba"));
+    System.out.println(sherlockAndAnagrams("ifailuhkqq"));
   }
 
   private static int sherlockAndAnagrams(String str) {

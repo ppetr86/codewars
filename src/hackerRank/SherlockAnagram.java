@@ -14,11 +14,14 @@ public class SherlockAnagram {
   private static int sherlockAndAnagrams(String str) {
     int result = 0;
 
+    // všechny možné délky, které zkoumám
     for (int strLen = 1; strLen <= str.length() / 2 + 1; strLen++) {
 
+      //substring1
       for (int i = 0; i < str.length() - strLen; i++) {
         List<String> leftList = Arrays.asList(str.substring(i, i + strLen).split("")).stream().sorted().collect(Collectors.toList());
 
+        //substring2
         for (int j = i + 1; j < str.length() - strLen + 1; j++) {
           List<String> rightList = Arrays.asList(str.substring(j, j + strLen).split("")).stream().sorted().collect(Collectors.toList());
           if (leftList.equals(rightList)) result++;

@@ -1,4 +1,4 @@
-package codewars;
+package codewars.kyu6;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -35,10 +35,7 @@ public class NbaRanking {
 
       String withoutNrs = matches[i].replaceAll("[0-9]", "");
       String leftName = findName(withoutNrs.substring(0, withoutNrs.indexOf("  ")), teamSet);
-      String holder = withoutNrs.substring(withoutNrs.indexOf("  ")).stripLeading();
       String rightName = findName(withoutNrs.substring(withoutNrs.indexOf("  ")), teamSet);
-      //String leftName = matches[i].replaceAll("[0-9]+[^A-Za-z]", "").substring(0, matches[i].replaceAll("[0-9]", "").lastIndexOf("  ")).trim();
-      //String rightName = matches[i].replaceAll("[0-9]+[^A-Za-z]", "").substring(matches[i].replaceAll("[0-9]", "").lastIndexOf("  ")).trim();
 
       Team left = findTeam(teamSet, leftName);
       Team right = findTeam(teamSet, rightName);
@@ -64,13 +61,13 @@ public class NbaRanking {
 
     teamSet = teamSet.stream().map(NbaRanking::didNotPlay).collect(Collectors.toSet());
 
-
     return teamSet.stream().map(Team::toString).collect(Collectors.joining());
   }
 
   private static String findName(String substring, Set<Team> teamSet) {
-    String result = teamSet.stream().filter(x -> x.name.contains(substring)).map(x -> x.name).collect(Collectors.joining());
-    if (result.equals("Philadelphia ers")) return "Philadelphia 76ers";
+    String changedSubString = substring.trim().stripLeading();
+    if (changedSubString.equals("Philadelphia ers")) return "Philadelphia 76ers";
+    String result = teamSet.stream().filter(x -> x.name.contains(changedSubString)).map(x -> x.name).collect(Collectors.joining());
     return result;
   }
 
