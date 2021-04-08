@@ -1,11 +1,9 @@
 package hackerRank;
 //https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
-//timeout on this approach
-
+// working approach
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class SherlockAnagramV4 {
   public static void main(String[] args) {
@@ -14,26 +12,25 @@ public class SherlockAnagramV4 {
 
   private static int sherlockAndAnagrams(String str) {
     int result = 0;
-    int strLen = 1;
+    Map<String, Integer> map1 = new HashMap<>();
 
-    for (int i = 0; i < str.length() - strLen; i++) {
-      String leftStr = str.substring(i, i + strLen);
-      Map<String, Long> map1 = createMap(leftStr);
-
-      for (int j = i + 1; j < str.length() - strLen + 1; j++) {
-        String rightStr = str.substring(j, j + strLen);
-        if (leftStr.length() == rightStr.length() && leftStr.contains(rightStr.substring(0, 1))) {
-          Map<String, Long> map2 = createMap(rightStr);
-          if (map1.equals(map2)) result++;
+    for (int i = 0; i < str.length(); i++) {
+      for (int j = i; j < str.length(); j++) {
+        char[] charArr = str.substring(i, j + 1).toCharArray();
+        Arrays.sort(charArr);
+        String subStr = new String (charArr);
+        if (map1.containsKey(subStr)) {
+          map1.put(subStr, map1.get(subStr) + 1);
+        } else {
+          map1.put(subStr, 1);
         }
       }
-      strLen++;
+    }
+    // get number of combinations
+    for (String each : map1.keySet()) {
+      int count = map1.get(each);
+      result += count * (count - 1) / 2;
     }
     return result;
-  }
-
-  private static Map<String, Long> createMap(String leftStr) {
-    return Arrays.stream(leftStr.split(""))
-            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
   }
 }
