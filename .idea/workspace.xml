@@ -20,20 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu5/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/CountingDuplicates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/EnglishBeggars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codingBat/recursion/Recursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/Delete$Army.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/Delete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codingBat/recursion/Recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codingBat/recursion/Recursion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

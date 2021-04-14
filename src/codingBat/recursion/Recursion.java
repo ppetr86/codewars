@@ -76,11 +76,48 @@ public class Recursion {
 
   public int array11(int[] nums, int index) {
 
-    if (index==nums.length) return 0;
-    if (nums[index]==11) return 1+array11(nums,index+1);
-    return array11(nums,index+1);
+    if (index == nums.length) return 0;
+    if (nums[index] == 11) return 1 + array11(nums, index + 1);
+    return array11(nums, index + 1);
   }
 
+  //Given an array of ints, compute recursively if the array contains somewhere a
+  // value followed in the array by that value times 10. We'll use
+  // the convention of considering only the part of the array that begins
+  // at the given index. In this way, a recursive call can pass index+1 to move
+  // down the array. The initial call will pass in index as 0.
 
+  public boolean array220(int[] nums, int index) {
+    if (nums.length == 0) return false;
+    if (index == nums.length - 1) return false;
+    if (nums[index] * 10 == nums[index + 1]) return true;
+    return array220(nums, index + 1);
+  }
+
+  //Given a string, compute recursively a new string where all the adjacent
+  // chars are now separated by a "*".
+
+  public String allStar(String str) {
+    if (str.length() == 0) return "";
+    if (str.length() == 1) return str;
+    return str.charAt(0) + "*" + allStar(str.substring(1));
+  }
+
+  //Given a string, compute recursively a new string where identical chars that
+  // are adjacent in the original string are separated from each other by a "*".
+  public String pairStar(String str) {
+    if (str.length() <= 1) return str;
+    if (str.charAt(0) == str.charAt(1))
+      return str.charAt(0) + "*" + pairStar(str.substring(1));
+    return str.charAt(0) + pairStar(str.substring(1));
+  }
+
+  //Given a string, compute recursively a new string where all the lowercase 'x'
+  // chars have been moved to the end of the string.
+  public String endX(String str) {
+    if (str.length() == 0) return "";
+    if (str.charAt(0) == 'x') return endX(str.substring(1)) + 'x';
+    return str.charAt(0) + endX(str.substring(1));
+  }
 
 }
