@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/algosEasy/Staircase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/measureStructure/DataStructure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/measureStructure/Unit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/measureStructure/UnitType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/measureStructure/UnitV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu5/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/CountingDuplicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/EnglishBeggars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codingBat/recursion/Recursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/Delete$Army.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/Delete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/Delete.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../danubius-company-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prefixbox-company-test-java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -80,13 +88,13 @@
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DataStructure">
-    <configuration name="CastleOnGrid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.CastleOnGrid" />
+  <component name="RunManager" selected="Application.MergeSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortingAlgos.BubbleSort" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackerRank.*" />
+          <option name="PATTERN" value="sortingAlgos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataStructure" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="measureStructure.DataStructure" />
+    <configuration name="EnglishBeggars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.EnglishBeggars" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="measureStructure.*" />
+          <option name="PATTERN" value="codewars.kyu6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fraudulent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.Fraudulent" />
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortingAlgos.InsertionSort" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackerRank.*" />
+          <option name="PATTERN" value="sortingAlgos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpecialStringV5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.SpecialStringV5" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortingAlgos.MergeSort" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackerRank.*" />
+          <option name="PATTERN" value="sortingAlgos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Staircase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.algosEasy.Staircase" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortingAlgos.SelectionSort" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackerRank.algosEasy.*" />
+          <option name="PATTERN" value="sortingAlgos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DataStructure" />
-        <item itemvalue="Application.Staircase" />
-        <item itemvalue="Application.Fraudulent" />
-        <item itemvalue="Application.CastleOnGrid" />
-        <item itemvalue="Application.SpecialStringV5" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.EnglishBeggars" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +205,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Delete.java</url>
+          <url>file://$PROJECT_DIR$/src/playground/Delete.java</url>
           <line>30</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -250,6 +258,11 @@
           <url>file://$PROJECT_DIR$/src/hackerRank/SpecialStringV5.java</url>
           <line>29</line>
           <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sortingAlgos/InsertionSort.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.util.NoSuchElementException" package="java.util" />
