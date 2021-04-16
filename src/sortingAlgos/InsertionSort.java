@@ -25,6 +25,7 @@ public class InsertionSort {
       // or it's at the first element where current >= a[j]
       ints[index + 1] = current;
     }
+
     return ints;
   }
 }

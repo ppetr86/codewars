@@ -23,5 +23,4 @@ public enum Unit {
     this.conversionToBase = conversionToBase;
     this.baseType = baseType;
   }
-
 }
