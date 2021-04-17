@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 //https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991/train/java
+//https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991/solutions/java
 public class ReverseOrRotate {
 
   public static void main(String[] args) {
