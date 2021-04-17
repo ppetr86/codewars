@@ -8,6 +8,7 @@ public class Caesar {
 
   static String caesarCipher(String s, int k) {
     char[] charArr = s.toCharArray();
+
     for (int i = 0; i < s.toCharArray().length; i++) {
       char c = s.toCharArray()[i];
       if (!Character.isLetter(c)) continue;

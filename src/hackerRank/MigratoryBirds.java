@@ -13,6 +13,7 @@ public class MigratoryBirds {
 
   static int migratoryBirdsMap(List<Integer> arr) {
     Map<Integer, Integer> frequencyMap = new HashMap<>();
+
     for (Integer each : arr) {
       frequencyMap.putIfAbsent(each,0);
       frequencyMap.put(each, frequencyMap.get(each)+1);
@@ -34,7 +35,6 @@ public class MigratoryBirds {
   static int migratoryBirds(List<Integer> arr) {
     int[] frequencies = new int[5];
 
-    //complex o(1)
     for (Integer each : arr) {
       frequencies[each - 1]++;
     }

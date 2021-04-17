@@ -17,10 +17,8 @@ public class NoZeros {
     for (int each : input3) {
       if (each == 0 && isAcceptingNumbers) {
         isAcceptingNumbers = false;
-        continue;
       } else if (each == 0 && !isAcceptingNumbers) {
         isAcceptingNumbers = true;
-        continue;
       } else if (isAcceptingNumbers) {
         result.add(each);
       }

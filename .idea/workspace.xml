@@ -20,15 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/algosMed/RecursiveDigitSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playground/Chunks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playground/NoZeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sortingAlgos/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/Rainfall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/ReverseOrRotate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/companyTest/prefixbox/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackerRank/ArrayDS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackerRank/RotateLeft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codingBat/recursion/Recursion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/codingBat/recursion/Recursion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/sortingAlgos/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/sortingAlgos/InsertionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/measureStructure/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/measureStructure/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sortingAlgos/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sortingAlgos/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/Caesar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/hackerRank/Caesar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/MigratoryBirds.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/hackerRank/MigratoryBirds.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/playground/NoZeros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/playground/NoZeros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/Caesar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/Caesar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackerRank/MigratoryBirds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/MigratoryBirds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playground/NoZeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/NoZeros.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +86,13 @@
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NoZeros">
-    <configuration name="Chunks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="playground.Chunks" />
+  <component name="RunManager" selected="Application.ReverseOrRotate">
+    <configuration name="ArrayDS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackerRank.ArrayDS" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="playground.*" />
+          <option name="PATTERN" value="hackerRank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoZeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="playground.NoZeros" />
+    <configuration name="MigratoryBirds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackerRank.MigratoryBirds" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="playground.*" />
+          <option name="PATTERN" value="hackerRank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PowerSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.algosMed.PowerSum" />
+    <configuration name="Rainfall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.Rainfall" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackerRank.algosMed.*" />
+          <option name="PATTERN" value="codewars.kyu6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sortingAlgos.QuickSort" />
+    <configuration name="ReverseOrRotate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.ReverseOrRotate" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sortingAlgos.*" />
+          <option name="PATTERN" value="codewars.kyu6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecursiveDigitSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.algosMed.RecursiveDigitSum" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="companyTest.prefixbox.Test" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackerRank.algosMed.*" />
+          <option name="PATTERN" value="companyTest.prefixbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NoZeros" />
-        <item itemvalue="Application.RecursiveDigitSum" />
-        <item itemvalue="Application.PowerSum" />
-        <item itemvalue="Application.Chunks" />
-        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.ReverseOrRotate" />
+        <item itemvalue="Application.Rainfall" />
+        <item itemvalue="Application.MigratoryBirds" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ArrayDS" />
       </list>
     </recent_temporary>
   </component>
