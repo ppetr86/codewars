@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu5/TourGranny.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/HighestScoringWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/codewars/kyu6/ReverseOrRotate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codewars/kyu6/ReverseOrRotate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,20 @@
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TourGranny">
+  <component name="RunManager" selected="Application.HighestScoringWord">
+    <configuration name="HighestScoringWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.HighestScoringWord" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codewars.kyu6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MigratoryBirds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hackerRank.MigratoryBirds" />
       <module name="codewars" />
@@ -117,19 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="companyTest.prefixbox.Test" />
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="companyTest.prefixbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TourGranny" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codewars.kyu5.TourGranny" />
       <module name="codewars" />
@@ -145,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HighestScoringWord" />
         <item itemvalue="Application.TourGranny" />
         <item itemvalue="Application.ReverseOrRotate" />
         <item itemvalue="Application.Rainfall" />
         <item itemvalue="Application.MigratoryBirds" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
