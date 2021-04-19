@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/HighestScoringWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu5/IntegersRecreation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu5/MatchSubst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/StreetFIghter2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu6/HighestScoringWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/codewars/kyu6/HighestScoringWord.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +79,7 @@
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HighestScoringWord">
+  <component name="RunManager" selected="Application.StreetFIghter2">
     <configuration name="HighestScoringWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codewars.kyu6.HighestScoringWord" />
       <module name="codewars" />
@@ -90,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MigratoryBirds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackerRank.MigratoryBirds" />
+    <configuration name="IntegersRecreation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu5.IntegersRecreation" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackerRank.*" />
+          <option name="PATTERN" value="codewars.kyu5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Rainfall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.Rainfall" />
+    <configuration name="MatchSubst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu5.MatchSubst" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codewars.kyu6.*" />
+          <option name="PATTERN" value="codewars.kyu5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,8 +119,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseOrRotate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.ReverseOrRotate" />
+    <configuration name="StreetFIghter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.StreetFIghter2" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
@@ -144,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreetFIghter2" />
+        <item itemvalue="Application.MatchSubst" />
+        <item itemvalue="Application.IntegersRecreation" />
         <item itemvalue="Application.HighestScoringWord" />
         <item itemvalue="Application.TourGranny" />
-        <item itemvalue="Application.ReverseOrRotate" />
-        <item itemvalue="Application.Rainfall" />
-        <item itemvalue="Application.MigratoryBirds" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +265,16 @@
           <line>18</line>
           <option name="timeStamp" value="107" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/codewars/kyu5/IntegersRecreation.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/codewars/kyu5/MatchSubst.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.util.NoSuchElementException" package="java.util" />
           <option name="timeStamp" value="36" />
@@ -274,6 +287,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/codewars$IntegersRecreation.ic" NAME="IntegersRecreation Coverage Results" MODIFIED="1618787099404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>codewars.kyu5.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/codewars$Delete.ic" NAME="Delete Coverage Results" MODIFIED="1617309049286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
