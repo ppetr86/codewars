@@ -2,7 +2,7 @@ package codewars.kyu6;
 
 import java.util.Arrays;
 
-public class StreetFIghter2 {
+public class StreetFighter2 {
 
   public static void main(String[] args) {
     String[][] fighters = new String[][]{
@@ -28,17 +28,11 @@ public class StreetFIghter2 {
 
   private static String defineHighlighted(int[] position, String[] moves, int i, String[][] fighters) {
     if (moves[i].equals("up")) {
-      if (position[0] == 0) return fighters[position[0]][position[1]];
-      if (position[0] == 1) {
-        position[0] = 0;
-        return fighters[position[0]][position[1]];
-      }
+      position[0] = 0;
+      return fighters[position[0]][position[1]];
     } else if (moves[i].equals("down")) {
-      if (position[0] == 1) return fighters[position[0]][position[1]];
-      if (position[0] == 0) {
-        position[0] = 1;
-        return fighters[position[0]][position[1]];
-      }
+      position[0] = 1;
+      return fighters[position[0]][position[1]];
     } else if (moves[i].equals("left")) {
       if (position[1] == 0) {
         position[1] = fighters[0].length - 1;
