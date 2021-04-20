@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/FindTheUniqueNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/StreetFighter2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/StringArrayDuplicates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu6/StreetFIghter2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/codewars/kyu6/StreetFIghter2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/codewars/kyu6/StreetFIghter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codewars/kyu5/StreetFighter2Kyu5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,26 +77,13 @@
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FindTheUniqueNumber">
+  <component name="RunManager" selected="Application.StringArrayDuplicates">
     <configuration name="FindTheUniqueNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codewars.kyu6.FindTheUniqueNumber" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="codewars.kyu6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntegersRecreation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.kyu5.IntegersRecreation" />
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codewars.kyu5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,13 +130,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringArrayDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.StringArrayDuplicates" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codewars.kyu6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringArrayDuplicates" />
         <item itemvalue="Application.FindTheUniqueNumber" />
         <item itemvalue="Application.StreetFighter2Kyu5" />
         <item itemvalue="Application.StreetFighter2" />
         <item itemvalue="Application.MatchSubst" />
-        <item itemvalue="Application.IntegersRecreation" />
       </list>
     </recent_temporary>
   </component>
