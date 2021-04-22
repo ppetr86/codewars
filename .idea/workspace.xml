@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/StringArrayDuplicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/StringRotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,26 +77,13 @@
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StringArrayDuplicates">
+  <component name="RunManager" selected="Application.StringRotation">
     <configuration name="FindTheUniqueNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codewars.kyu6.FindTheUniqueNumber" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="codewars.kyu6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatchSubst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.kyu5.MatchSubst" />
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codewars.kyu5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,13 +130,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringRotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.StringRotation" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codewars.kyu6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringRotation" />
         <item itemvalue="Application.StringArrayDuplicates" />
         <item itemvalue="Application.FindTheUniqueNumber" />
         <item itemvalue="Application.StreetFighter2Kyu5" />
         <item itemvalue="Application.StreetFighter2" />
-        <item itemvalue="Application.MatchSubst" />
       </list>
     </recent_temporary>
   </component>
