@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/PascalsTriangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codewars/kyu6/PascalsTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codewars/kyu6/PascalsTriangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,6 +277,11 @@
           <url>file://$PROJECT_DIR$/src/codewars/kyu5/StreetFighter2Kyu5.java</url>
           <line>76</line>
           <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/codewars/kyu6/PascalsTriangle.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="137" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.util.NoSuchElementException" package="java.util" />
