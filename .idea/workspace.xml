@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/StringRotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/PascalsTriangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StringRotation">
+  <component name="RunManager" selected="Application.PascalsTriangle">
     <configuration name="FindTheUniqueNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codewars.kyu6.FindTheUniqueNumber" />
       <module name="codewars" />
@@ -91,8 +91,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreetFighter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.StreetFighter2" />
+    <configuration name="PascalsTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.PascalsTriangle" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
@@ -145,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PascalsTriangle" />
         <item itemvalue="Application.StringRotation" />
         <item itemvalue="Application.StringArrayDuplicates" />
         <item itemvalue="Application.FindTheUniqueNumber" />
         <item itemvalue="Application.StreetFighter2Kyu5" />
-        <item itemvalue="Application.StreetFighter2" />
       </list>
     </recent_temporary>
   </component>
