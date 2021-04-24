@@ -34,7 +34,6 @@ public class PascalsTriangle {
         levelCounter++;
       }
     }
-
     return result;
   }
 
