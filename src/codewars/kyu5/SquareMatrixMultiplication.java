@@ -32,8 +32,8 @@ public class SquareMatrixMultiplication {
     int[][] result = new int[a.length][a[0].length];
 
     for (int i = 0; i < result.length; i++) {
+      int[] aRow = a[i];
       for (int j = 0; j < result[i].length; j++) {
-        int[] aRow = a[i];
         int[] bRow = reversedB[reversedB.length - 1 - j];
         result[i][j] = multipliedRows(aRow, bRow);
       }

@@ -20,16 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2707e4-4677-4c04-9fc6-b19f9b329abe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu5/SimplePigLatin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu5/SquareMatrixMultiplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/MatrixTranspose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/ValidParen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codewars/kyu6/WhichAreIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu4/DontDrinkWater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu4/PathFinder1_DefaultGraphImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codewars/kyu5/HumanReadableTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu6/SeparateTheWheatFromChaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/codewars/kyu6/SeparateTheWheatFromChaff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/CommonChild$EachLetter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/hackerRank/CommonChild.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/hackerRank/CommonChild.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hackerRank/CommonChild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerRank/CommonChild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/SquareMatrixMultiplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/codewars/kyu5/SquareMatrixMultiplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codewars/kyu5/SquareMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codewars/kyu5/SquareMatrixMultiplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +77,38 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="codewars.kyu4" />
       <recent name="codewars.kyu5" />
       <recent name="hackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SquareMatrixMultiplication">
+  <component name="RunManager" selected="Application.PathFinder1_DefaultGraphImplementation">
+    <configuration name="DontDrinkWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu4.DontDrinkWater" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codewars.kyu4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HumanReadableTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu5.HumanReadableTime" />
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codewars.kyu5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MatrixTranspose" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codewars.kyu6.MatrixTranspose" />
       <module name="codewars" />
@@ -99,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimplePigLatin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.kyu5.SimplePigLatin" />
+    <configuration name="PathFinder1_DefaultGraphImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.kyu4.PathFinder1_DefaultGraphImplementation" />
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codewars.kyu5.*" />
+          <option name="PATTERN" value="codewars.kyu4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,39 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidParen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.ValidParen" />
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codewars.kyu6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WhichAreIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codewars.kyu6.WhichAreIn" />
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codewars.kyu6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PathFinder1_DefaultGraphImplementation" />
+        <item itemvalue="Application.DontDrinkWater" />
+        <item itemvalue="Application.HumanReadableTime" />
         <item itemvalue="Application.SquareMatrixMultiplication" />
         <item itemvalue="Application.MatrixTranspose" />
-        <item itemvalue="Application.SimplePigLatin" />
-        <item itemvalue="Application.ValidParen" />
-        <item itemvalue="Application.WhichAreIn" />
       </list>
     </recent_temporary>
   </component>
