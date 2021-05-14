@@ -1,10 +1,11 @@
 package codewars.kyu5;
+
 //https://www.codewars.com/kata/5a3267b2ee1aaead3d000037/train/java
+//https://www.codewars.com/kata/5a3267b2ee1aaead3d000037/solutions/java
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -46,55 +47,35 @@ public class PhoneWord {
 
 
   public static void main(String[] args) {
-    System.out.println(check1800("1-800-SAW-SLUT"));
+    System.out.println(check1800("1-800-CODE-WAR"));
   }
 
 
   public static Set<String> check1800(final String str) {
     Map<Character, Integer> stringsToIntegers = createStringToIntegers();
 
-    String str1 = str.substring(6, 10) + str.substring(11);
-    String strToNumber = createNumbersString(str1, stringsToIntegers);
+    String strToNumber = createNumbersString(str.substring(6).replaceAll("-",""), stringsToIntegers);
 
     Set<String> matchingWords = new HashSet<>();
 
-    Set<String> startsWith4Letters = Arrays.stream(PRELOADED)
-            .filter(each -> each.length() == 4)
-            .filter(each -> createNumbersString(each, stringsToIntegers).equals(strToNumber.substring(0, 4)))
-            .collect(Collectors.toSet());
+    Set<String> with4Letters = new HashSet<>();
+    Set<String> with3Letters = new HashSet<>();
 
-    if (!startsWith4Letters.isEmpty()) {
-      Set<String> endsWith3Letters = Arrays.stream(PRELOADED)
-              .filter(each -> each.length() == 3)
-              .filter(each -> createNumbersString(each, stringsToIntegers).equals(strToNumber.substring(4)))
-              .collect(Collectors.toSet());
+    Arrays.stream(PRELOADED)
+            .forEach(word -> {
+              if (word.length() == 4 && createNumbersString(word, stringsToIntegers).equals(strToNumber.substring(0, 4)) ||
+                      createNumbersString(word, stringsToIntegers).equals(strToNumber.substring(3))) {
+                with4Letters.add(word);
+              } else if (word.length() == 4 && createNumbersString(word, stringsToIntegers).equals(strToNumber.substring(4)) ||
+                      createNumbersString(word, stringsToIntegers).equals(strToNumber.substring(0, 3))) {
+                with3Letters.add(word);
+              }
+            });
 
-      if (!endsWith3Letters.isEmpty()) {
-        for (String len4 : startsWith4Letters) {
-          for (String len3 : endsWith3Letters) {
-            matchingWords.add("1-800-" + len4 + "-" + len3);
-          }
-        }
-      }
-    }
-
-    Set<String> startsWith3Letters = Arrays.stream(PRELOADED)
-            .filter(each -> each.length() == 3)
-            .filter(each -> createNumbersString(each, stringsToIntegers).equals(strToNumber.substring(0, 3)))
-            .collect(Collectors.toSet());
-
-    if (!startsWith3Letters.isEmpty()) {
-      Set<String> endsWith4Letters = Arrays.stream(PRELOADED)
-              .filter(each -> each.length() == 4)
-              .filter(each -> createNumbersString(each, stringsToIntegers).equals(strToNumber.substring(3)))
-              .collect(Collectors.toSet());
-
-      if (!endsWith4Letters.isEmpty()) {
-        for (String len3 : startsWith3Letters) {
-          for (String len4 : endsWith4Letters) {
-            matchingWords.add("1-800-" + len3 + len4.charAt(0) + "-" + len4.substring(1));
-          }
-        }
+    for (String len3 : with3Letters) {
+      for (String len4 : with4Letters) {
+        matchingWords.add("1-800-" + len3 + "-" + len4);
+        matchingWords.add("1-800-" + len4 + "-" + len3);
       }
     }
 
@@ -129,19 +110,5 @@ public class PhoneWord {
     }
 
     return stringsToIntegers;
-  }
-
-  public static Map<Integer, List<String>> createNumbersToLetters() {
-    Map<Integer, List<String>> numbersToLetters = new HashMap<>();
-    numbersToLetters.put(2, Arrays.asList("A", "B", "C"));
-    numbersToLetters.put(3, Arrays.asList("D", "E", "F"));
-    numbersToLetters.put(4, Arrays.asList("G", "H", "I"));
-    numbersToLetters.put(5, Arrays.asList("J", "K", "L"));
-    numbersToLetters.put(6, Arrays.asList("M", "N", "O"));
-    numbersToLetters.put(7, Arrays.asList("P", "Q", "R", "S"));
-    numbersToLetters.put(8, Arrays.asList("T", "U", "V"));
-    numbersToLetters.put(9, Arrays.asList("W", "X", "Y", "Z"));
-
-    return numbersToLetters;
   }
 }
