@@ -1,13 +1,13 @@
 /*
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.MyArrays;
 import java.util.List;
 
 public class SumOfK {
 
   public static void main(String[] args) throws ParseException {
-    System.out.println(chooseBestSum(163, 3, new ArrayList<>(Arrays.asList(50, 55, 56, 57, 58))));
+    System.out.println(chooseBestSum(163, 3, new ArrayList<>(MyArrays.asList(50, 55, 56, 57, 58))));
   }
 
   public static Integer chooseBestSum(int target, int countTowns, List<Integer> ls) {

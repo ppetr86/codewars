@@ -2,7 +2,7 @@
 package codewars.kyu5;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.MyArrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -10,14 +10,14 @@ import java.util.stream.Collectors;
 public class ClosesWeight {
 
   public static void main(String[] args) {
-    System.out.println(Arrays.deepToString(closest("456899 50 11992 176 272293 163 389128 96 290193 85 52")));
+    System.out.println(MyArrays.deepToString(closest("456899 50 11992 176 272293 163 389128 96 290193 85 52")));
   }
 
   private static int[][] closest(String strng) {
 
     if (strng.isEmpty() || strng.isBlank()) return new int[0][0];
-    List<String> strList = Arrays.stream(strng.split(" ")).collect(Collectors.toList());
-    List<Integer> intList = Arrays.stream(strng.split(" ")).map(Integer::parseInt).collect(Collectors.toList());
+    List<String> strList = MyArrays.stream(strng.split(" ")).collect(Collectors.toList());
+    List<Integer> intList = MyArrays.stream(strng.split(" ")).map(Integer::parseInt).collect(Collectors.toList());
     List<Integer> weights = new ArrayList<>();
 
     for (int i = 0; i < strList.size(); i++) {

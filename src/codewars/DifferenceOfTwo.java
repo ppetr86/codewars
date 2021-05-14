@@ -40,7 +40,7 @@ public class DifferenceOfTwo {
   }
 }
 
-//var s = Arrays.stream(a).boxed().collect(Collectors.toSet());
-//    return Arrays.stream(a).boxed().filter(x -> s.contains(x + 2)).sorted().map(x -> new int[]{x, x + 2}).toArray(int[][]::new);
+//var s = MyArrays.stream(a).boxed().collect(Collectors.toSet());
+//    return MyArrays.stream(a).boxed().filter(x -> s.contains(x + 2)).sorted().map(x -> new int[]{x, x + 2}).toArray(int[][]::new);
 
 //    return of(array).filter(i -> contains(array, i + 2)).sorted().mapToObj(i -> new int[]{i, i + 2}).toArray(int[][]::new);

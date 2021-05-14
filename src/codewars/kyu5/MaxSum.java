@@ -21,7 +21,7 @@ public class MaxSum {
 
   /*public static int maxContiguousSum(final int[] arr) {
     int result = arr[0];
-    System.out.println(Arrays.toString(arr));
+    System.out.println(MyArrays.toString(arr));
 
     for (int i = 0; i < arr.length - 1; i++) {
       int dummy = arr[i];

@@ -11,11 +11,11 @@ public class Triplets {
   static long triplets(int[] a, int[] b, int[] c) {
     Set<List<Integer>> triples = new HashSet<>();
 
-    /*int bMin = Arrays.stream(b).min().orElse(0);
-    int bMax = Arrays.stream(b).max().orElse(0);
-    int cMax = Arrays.stream(c).max().orElse(0);
-    a = Arrays.stream(a).filter(x->x>=bMax).toArray();
-    c = Arrays.stream(c).filter(x->x>=bMax).toArray();*/
+    /*int bMin = MyArrays.stream(b).min().orElse(0);
+    int bMax = MyArrays.stream(b).max().orElse(0);
+    int cMax = MyArrays.stream(c).max().orElse(0);
+    a = MyArrays.stream(a).filter(x->x>=bMax).toArray();
+    c = MyArrays.stream(c).filter(x->x>=bMax).toArray();*/
 
     for (int i = 0; i < a.length; i++) {
       int p = a[i];

@@ -18,48 +18,48 @@ public class Class {
     System.out.println(isAValidMessage(""));
     System.out.println(findIt(new int[]{5,4,3,2,1,5,4,3,2,10,10}));*/
     //System.out.println(findUniq(new double[]{0, 1, 0}));
-    //System.out.println(Arrays.toString(sumParts(new int[]{744125, 935, 407, 454, 430, 90, 144, 6710213, 889, 810, 2579358})));
+    //System.out.println(MyArrays.toString(sumParts(new int[]{744125, 935, 407, 454, 430, 90, 144, 6710213, 889, 810, 2579358})));
     //System.out.println(stat("01|15|59, 1|47|16, 01|17|20, 1|32|34, 2|17|17"));
     //System.out.println(chunk(new int[]{1,2,3,4}, 2));
     //System.out.println(closestDistance(new int[]{1,9,97,5,99}));
-    //System.out.println(Arrays.toString(zipMerge(new String[]{"apple"}, new String[]{"dog", "cat"})));
+    //System.out.println(MyArrays.toString(zipMerge(new String[]{"apple"}, new String[]{"dog", "cat"})));
     //System.out.println(encryptThis("A wise old owl lived in an oak"));
     //System.out.println(mapToUppercase(new String[]{"aaron", "frank", "william", "gilliam"}));
     //System.out.println(getTotalNumberOfLettersOfNamesLongerThanFive(new String[]{"aaron", "frank", "william", "gilliam"}));
-    //System.out.println(transformShouldFlattenCollection(Arrays.asList(Arrays.asList("Viktor", "Farcic"), Arrays.asList("John", "Doe", "Third"))));
+    //System.out.println(transformShouldFlattenCollection(MyArrays.asList(MyArrays.asList("Viktor", "Farcic"), MyArrays.asList("John", "Doe", "Third"))));
     Person sara = new Person("Sara", 4, "Norwegian");
     Person viktor = new Person("Viktor", 40, "Serbian");
     Person eva = new Person("Eva", 42, "Norwegian");
     //Person anna = new Person("Anna", 5);
     List<Person> people = Arrays.asList(sara, viktor, eva);
     //System.out.println(getOldestPerson(people).toString());
-    //System.out.println(calculate(Arrays.asList(1, 2, 3, 4, 5)));
+    //System.out.println(calculate(MyArrays.asList(1, 2, 3, 4, 5)));
     //System.out.println(getKidNames(people));
     //System.out.println(partitionAdults(people));
     //System.out.println(invalidTriangle(new int[][]{{1,10,12},{5,10,7}}));
     //System.out.println(filter(new int[]{1,2,0,3,4,5,6}));
     //System.out.println(groupByNationality(people));
     //System.out.println(namesToString(people));
-    //System.out.println(stringer(Arrays.asList(3, 44)));
-    //System.out.println(temperatures(Arrays.asList(-5, 5, 20, -25, 25), 5));
+    //System.out.println(stringer(MyArrays.asList(3, 44)));
+    //System.out.println(temperatures(MyArrays.asList(-5, 5, 20, -25, 25), 5));
     /*System.out.println(sortArray(new String[]{"Roman", "Ada", "F", "Ivanka", "Nina"}));
     System.out.println(sortArrayReversed(new String[]{"Roman", "Ada", "F", "Ivanka", "Nina"}));
     System.out.println(sortArrayByFirstLetter(new String[]{"Roman", "Ada", "F", "Ivanka", "Nina", "Petr"}));
     System.out.println(sortArrayLetterEFirst(new String[]{"Roman", "Ada", "F", "Ivanka", "Nina", "Petr", "Evzen"}));*/
-    //System.out.println(Arrays.toString(gap(2, 5, 7)));
+    //System.out.println(MyArrays.toString(gap(2, 5, 7)));
     String b1 = "1000.00!=\n125 Market !=:125.45\n126 Hardware =34.95\n127 Video! 7.45\n128 Book :14.32\n129 Gasoline ::16.10";
     //System.out.println(balance(b1));
     //System.out.println(decode("1273409kuqhkoynvvknsdwljantzkpnmfgf"));
     //System.out.println(divisibleCount(6, 33, 2));
     //System.out.println(longestConsec(new String[]{"it","wkppv","ixoyx", "3452", "zzzzzzzzzzzz"}, 0));
     //System.out.println(arrange("who hit retaining The That a we taken"));
-    //System.out.println(Arrays.toString(nbMonths(12000, 8000, 1000, 1.5)));
-    //System.out.println(Arrays.deepToString(closest("54 239382 162 254765 182 485944 468751 49780 108")));
+    //System.out.println(MyArrays.toString(nbMonths(12000, 8000, 1000, 1.5)));
+    //System.out.println(MyArrays.deepToString(closest("54 239382 162 254765 182 485944 468751 49780 108")));
     /*System.out.println(uniqueAvg(new int[][]{{100, 0, 20, 100}, {50, 10, 20}}));
     System.out.println(uniqueAvg(new int[][]{{2, 4, 5}, {3, 5, 0}, {2, 6, 2, 5}}));
     */
 
-    //System.out.println(Arrays.toString(sort(new int[]{8, 8, 9, 9, 10, 10})));
+    //System.out.println(MyArrays.toString(sort(new int[]{8, 8, 9, 9, 10, 10})));
     //System.out.println(posAverage("466960, 069060, 494940, 060069, 060090, 640009, 496464, 606900, 004000, 944096"));
 
     //System.out.println(antiDiagonal(new int[][]{{1,2,3},{3,4,6},{5,2,5}}));
@@ -73,9 +73,9 @@ public class Class {
 
     String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     StringBuilder result = new StringBuilder();
-    List<String> alphabetArr = Arrays.asList(alphabet.split(""));
+    List<String> alphabetArr = MyArrays.asList(alphabet.split(""));
     List<Integer> alphaNumbers = new ArrayList<>();
-    int[] rotorsFlat = Arrays.stream(rotors).flatMapToInt(IntStream::of).toArray();
+    int[] rotorsFlat = MyArrays.stream(rotors).flatMapToInt(IntStream::of).toArray();
     for (int i = 1; i < 27; i++) {
       alphaNumbers.add(i);
     }
@@ -322,7 +322,7 @@ public class Class {
   /*private static String decode(String str) {
     StringBuilder result = new StringBuilder();
 
-    long digitCount = Arrays.stream(str.split("")).filter(each -> Character.isDigit(each.charAt(0))).count();
+    long digitCount = MyArrays.stream(str.split("")).filter(each -> Character.isDigit(each.charAt(0))).count();
 
     int numberFromStr = Integer.parseInt(str.substring(0, 7));
     String core = str.substring(7);
@@ -590,7 +590,7 @@ public class Class {
     LocalDateTime median;
 
     str = str.replaceAll("|", ":");
-    List<String> strings = Arrays.asList(str.split(","));
+    List<String> strings = MyArrays.asList(str.split(","));
     DateTimeFormatter format = DateTimeFormatter.ofPattern("HH:mm:ss");
 
     List<LocalDateTime> list = strings.stream().map(each -> LocalDateTime.parse(each, format)).collect(Collectors.toList());
@@ -842,7 +842,7 @@ public class Class {
       String str = arr[i];
       arr[i] = "(" + str.substring(str.indexOf(" ") + 1) + ", " + str.substring(0, str.indexOf(" ")) + ")";
     }
-    Arrays.sort(arr);
+    MyArrays.sort(arr);
     String result2 = "";
     for (String each: arr){
       result2 += each;

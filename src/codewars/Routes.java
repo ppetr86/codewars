@@ -16,9 +16,9 @@ public class Routes {
 
   /*public static String findRoutes(String[][] routes) {
     // create map where key is finishing locaiton, value is starting location
-    Map<String, String> map = Arrays.stream(routes).collect(toMap(e -> e[1], e -> e[0]));
+    Map<String, String> map = MyArrays.stream(routes).collect(toMap(e -> e[1], e -> e[0]));
     // get the one which in map doesnt contain the finish location
-    String[] last = Arrays.stream(routes).filter(e -> !map.containsValue(e[1])).findAny().get();
+    String[] last = MyArrays.stream(routes).filter(e -> !map.containsValue(e[1])).findAny().get();
     List<String> s = Stream.iterate(last[1], e -> map.get(e)).limit(routes.length + 1)
             .collect(LinkedList::new, (a, b) -> a.addFirst(b), (a, b) -> {});
     return s.stream().collect(joining(", "));

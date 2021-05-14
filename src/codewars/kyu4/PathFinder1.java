@@ -10,10 +10,10 @@ import java.util.Stack;
 
 //https://www.codewars.com/kata/5765870e190b1472ec0022a2/train/java
 //https://www.codewars.com/kata/5765870e190b1472ec0022a2/solutions/java
-public class PathFinder1_DefaultGraphImplementation {
+public class PathFinder1 {
 
   public static void main(String[] args) {
-    String a = ".W.\n" + ".W.\n" + "W..",
+    String a = ".W.\n" + ".W.\n" + "...",
             b = ".W.\n" + ".W.\n" + "W..",
             c = "......\n" + "......\n" + "......\n" + "......\n" + "......\n" + "......",
             d = "......\n" + "......\n" + "......\n" + "......\n" + ".....W\n" + "....W.";
@@ -58,7 +58,7 @@ public class PathFinder1_DefaultGraphImplementation {
           stack.push(neighbour);
       }
     }
-
+    System.out.println("hello");
     return false;
   }
 
@@ -94,25 +94,5 @@ public class PathFinder1_DefaultGraphImplementation {
       return result;
     }
   }
-
-  /*Graph graph = new Graph();
-    for (int i = 0; i < arrFromMaze.length; i++) {
-      String[] inTheRow = arrFromMaze[i].split("");
-      for (int j = 0; j < inTheRow.length; j++) {
-        char label = arrFromMaze[i].charAt(j);
-        List<Vertex> neighbours = new ArrayList<>(4);
-
-        // up down left right
-        if (i > 0) neighbours.add(new Vertex(arrFromMaze[i - 1].charAt(j), new int[]{i - 1, j}, false));
-        if (i < arrFromMaze.length - 1)
-          neighbours.add(new Vertex(arrFromMaze[i + 1].charAt(j), new int[]{i + 1, j}, false));
-        if (j > 0) neighbours.add(new Vertex(arrFromMaze[i].charAt(j - 1), new int[]{i, j - 1}, false));
-        if (j < inTheRow.length - 1)
-          neighbours.add(new Vertex(arrFromMaze[i].charAt(j + 1), new int[]{i, j + 1}, false));
-
-        Vertex vertex = new Vertex(label, new int[]{i, j}, false, neighbours);
-        graph.
-      }
-    }*/
 
 }

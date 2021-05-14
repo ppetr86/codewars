@@ -44,7 +44,7 @@ public class Fraudulent {
 
     int result = 0;
     for (int i = d + 1; i < expenditure.length; i++) {
-      int[] ints2 = Arrays.stream(expenditure).skip(i - d).limit(d).sorted().toArray();
+      int[] ints2 = MyArrays.stream(expenditure).skip(i - d).limit(d).sorted().toArray();
       double median = ints2[ints2.length / 2];
       if (median * 2 > expenditure[i]) result++;
     }

@@ -33,7 +33,7 @@ public class CastleOnGrid {
 
 
     for (int i = 0; i < maze.length; i++) {
-      System.out.println(Arrays.toString(maze[i]));
+      System.out.println(MyArrays.toString(maze[i]));
     }
     return result;
   }
