@@ -24,45 +24,31 @@ public class PhoneWordV2 {
   public static Set<String> check1800(final String str) {
     Map<Character, Integer> stringsToIntegers = createStringToIntegers();
 
-    String strToNumber = createNumbersString(str.substring(6).replaceAll("-",""), stringsToIntegers);
-
+    String strToNumber = lettersToNumbers(str.substring(6).replaceAll("-",""), stringsToIntegers);
     Set<String> matchingWords = new HashSet<>();
-
-    Set<String> startsWith4Letters = Arrays.stream(PRELOADED)
-            .filter(each -> each.length() == 4)
-            .filter(each -> createNumbersString(each, stringsToIntegers).equals(strToNumber.substring(0, 4)))
-            .collect(Collectors.toSet());
+    Set<String> startsWith4Letters = getCombinations(stringsToIntegers, strToNumber, 4);
 
     if (!startsWith4Letters.isEmpty()) {
-      Set<String> endsWith3Letters = Arrays.stream(PRELOADED)
-              .filter(each -> each.length() == 3)
-              .filter(each -> createNumbersString(each, stringsToIntegers).equals(strToNumber.substring(4)))
-              .collect(Collectors.toSet());
+      Set<String> endsWith3Letters = getCombinations(stringsToIntegers, strToNumber, 3, 4);
 
       if (!endsWith3Letters.isEmpty()) {
         for (String len4 : startsWith4Letters) {
           for (String len3 : endsWith3Letters) {
-            matchingWords.add("1-800-" + len4 + "-" + len3);
+            matchingWords.add(String.format("1-800-%s-%s",len4,len3));
           }
         }
       }
     }
 
-    Set<String> startsWith3Letters = Arrays.stream(PRELOADED)
-            .filter(each -> each.length() == 3)
-            .filter(each -> createNumbersString(each, stringsToIntegers).equals(strToNumber.substring(0, 3)))
-            .collect(Collectors.toSet());
+    Set<String> startsWith3Letters = getCombinations(stringsToIntegers, strToNumber, 3);
 
     if (!startsWith3Letters.isEmpty()) {
-      Set<String> endsWith4Letters = Arrays.stream(PRELOADED)
-              .filter(each -> each.length() == 4)
-              .filter(each -> createNumbersString(each, stringsToIntegers).equals(strToNumber.substring(3)))
-              .collect(Collectors.toSet());
+      Set<String> endsWith4Letters = getCombinations(stringsToIntegers, strToNumber, 4, 3);
 
       if (!endsWith4Letters.isEmpty()) {
         for (String len3 : startsWith3Letters) {
           for (String len4 : endsWith4Letters) {
-            matchingWords.add("1-800-" + len3 + "-" + len4);
+            matchingWords.add(String.format("1-800-%s-%s",len3,len4));
           }
         }
       }
@@ -70,7 +56,21 @@ public class PhoneWordV2 {
     return matchingWords;
   }
 
-  public static String createNumbersString(String str, Map<Character, Integer> stringsToIntegers) {
+  private static Set<String> getCombinations(Map<Character, Integer> stringsToIntegers, String strToNumber, int i) {
+    return Arrays.stream(PRELOADED)
+            .filter(each -> each.length() == i)
+            .filter(each -> lettersToNumbers(each, stringsToIntegers).equals(strToNumber.substring(0, i)))
+            .collect(Collectors.toSet());
+  }
+
+  private static Set<String> getCombinations(Map<Character, Integer> stringsToIntegers, String strToNumber, int length, int startIndex) {
+    return Arrays.stream(PRELOADED)
+            .filter(each -> each.length() == length)
+            .filter(each -> lettersToNumbers(each, stringsToIntegers).equals(strToNumber.substring(startIndex)))
+            .collect(Collectors.toSet());
+  }
+
+  public static String lettersToNumbers(String str, Map<Character, Integer> stringsToIntegers) {
 
     return Arrays.stream(str.split(""))
             .map(each -> each.charAt(0) == '-' ? "-" : String.valueOf(stringsToIntegers.get(each.charAt(0))))
