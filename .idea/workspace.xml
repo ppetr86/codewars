@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54a2176c-b8fd-4e03-b8c8-3ea7910d7d7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/codewars/codewars/kyu4/ConnectFour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/codewars/codewars/kyu4/ConnectFour.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/codewars/kyu4/ConnectFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codewars/kyu4/ConnectFour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="ConnectFour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

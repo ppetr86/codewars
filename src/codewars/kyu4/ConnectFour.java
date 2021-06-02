@@ -1,6 +1,6 @@
 package codewars.kyu4;
 //https://www.codewars.com/kata/56882731514ec3ec3d000009/train/java
-
+//https://www.codewars.com/kata/56882731514ec3ec3d000009/solutions/java
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
