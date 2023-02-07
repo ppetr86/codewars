@@ -14,6 +14,59 @@ public class ClientDatabase {
                 "8", "15500", "Praha", "123456"));
         DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
                 "8", "29992", "Bremen", "20201157"));
+
+        //zacinaji kompletni parsovaci data
+        DATABASE.add(new Client("Ortrud", "Hill", "019125610664", "Bergstraße",
+                "25", "6241", "Luckenwalde", "20221565"));
+
+        DATABASE.add(new Client("Herma", "Heitmann ", "019521068868", "Geschwister-Scholl-Straße",
+                "20B", "31429", "Mülheim an der Ruhr", "20221572"));
+
+        DATABASE.add(new Client("Monika", "Kastner", "019135763642", "Nelkenweg",
+                "45", "58262", "Wangen im Allgäu", "20221579"));
+
+        //zacinaji nekompletni parsovaci data
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221586"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221593"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221607"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221649"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221614"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221628"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221642"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221656"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221663"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221670"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221677"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221691"));
+
+        DATABASE.add(new Client("Diane", "Nguyen", "015234531642", "Finkenweg",
+                "8", "29992", "Bremen", "20221698"));
+
+        DATABASE.add(new Client("Anett", "Haug", "019685848009", "Feldstraße",
+                "14", "70676", "Uelzen", "20221635"));
     }
 
     public static List<Client> getAllClients() {

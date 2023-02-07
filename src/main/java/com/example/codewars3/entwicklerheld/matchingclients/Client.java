@@ -30,4 +30,18 @@ public class Client {
 
     public Client() {
     }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", street='" + street + '\'' +
+                ", houseNumber='" + houseNumber + '\'' +
+                ", postcode='" + postcode + '\'' +
+                ", clientId='" + clientId + '\'' +
+                ", city='" + city + '\'' +
+                '}';
+    }
 }
