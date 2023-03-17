@@ -1,6 +1,6 @@
 package com.example.codewars3;
 
-import com.example.codewars3.vogella.Calculator;
+import com.example.vogella.Calculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
